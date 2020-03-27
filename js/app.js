@@ -1,11 +1,11 @@
 'use strict';
 
 var userName = prompt('What is your name?');
-console.log(userName + ' this is the answer to what is your name');
+//console.log(userName + ' this is the answer to what is your name');
 alert('It\'s a pleasure to meet you ' + userName);
 
 var codeQuestion = prompt('Do you know how to use Javascript?').toLowerCase();
-console.log('This is the answer to do you know how to use Javascript ' + codeQuestion);
+//console.log('This is the answer to do you know how to use Javascript ' + codeQuestion);
 alert('Remember to use console.log in the browser to test code!');
 
 if(codeQuestion === 'yes' || codeQuestion === 'y'){
@@ -18,7 +18,7 @@ else if(codeQuestion === 'no' || codeQuestion === 'n'){
 }
 
 var determined = prompt('Are you determined to learn JS ' + userName + '?').toLowerCase();
-console.log('This is the answer to are you determined to learn JS ' + determined);
+//console.log('This is the answer to are you determined to learn JS ' + determined);
 alert('Remember that with code, less is more');
 
 if(determined === 'yes' || determined === 'y'){
@@ -31,7 +31,7 @@ else if(determined === 'no' || determined === 'n'){
 }
 
 var uncomfortable = prompt('Are you uncomfortable yet?').toLowerCase();
-console.log('This is the answer to are you uncomfortable yet ' + uncomfortable);
+//console.log('This is the answer to are you uncomfortable yet ' + uncomfortable);
 alert('Embrace the suck, buttercup!');
 
 if(uncomfortable === 'yes' || uncomfortable === 'y'){
@@ -44,7 +44,7 @@ else if(uncomfortable === 'no' || uncomfortable === 'n'){
 }
 
 var areAfraid = prompt('Are you afraid?').toLowerCase();
-console.log('this is the answer to are you afraid ' + areAfraid);
+//console.log('this is the answer to are you afraid ' + areAfraid);
 alert('You must unlearn, what you have learned');
 
 if(areAfraid === 'yes' || areAfraid === 'y'){
