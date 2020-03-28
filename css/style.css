@@ -1,12 +1,40 @@
-body {
-  background-color: blanchedalmond;
-}
-article {
-  display: block;
-  border-width: 3px;
-  border-color: black;
+/* This line of CSS is to help older browsers state which elements should be rendered as block-level elements. Duckett book page 442. */
+header, section, footer, aside, nav, article, figure, figcaption {
+  display: block;}
 
-  }
-section {
+body {
+  background-color: beige;
+  width: auto;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  background-color: darkgrey;
+  text-align: center;
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+ul {
+  width: 350px;
+  list-style: circle;
+  list-style-position: outside;
   
+}
+li {
+  margin: 10px;
+
+}
+
+p {
+  letter-spacing: px;
+}
+
+article {
+  border-width: 5px;
+  border-color: black;
 }
