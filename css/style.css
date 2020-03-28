@@ -6,26 +6,39 @@ body {
 }
 /* Div Styles */
 #box-one {
-  border: dashed;
+  border: dashed 5px;
+  border-color: black darkolivegreen darkolivegreen black;
   width: 400px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
 
 }
 #box-two {
-  border: dashed;
-  width: 400px;
+  border: dashed 5px;
+  border-color: black darkolivegreen darkolivegreen black;  width: 400px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
 
 }
 #box-3 {
-  border: dashed;
-  width: 400px;
+  border: dashed 5px;
+  border-color: black darkolivegreen darkolivegreen black;  width: 400px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+
 }
 /* Headers */
 h1 {
   font-size: 40px;
+  padding: 10px;
+  margin: 20px;
   text-align: center;
-  background-color: darkgrey;
-  border: groove;
-  border-color: rgb(100, 28, 28); 
+  border: dashed 5px;
+  border-radius: 5px;
+  border-color: black darkolivegreen darkolivegreen black;  width: 400px;
 }
 
 h2 {
@@ -33,7 +46,7 @@ h2 {
   text-align: center;
 }
 /* Unordered lists */
-ul li:: {
+ul li::before {
   list-style-type: square;
 }
 
