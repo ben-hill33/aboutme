@@ -16,7 +16,8 @@ body {
 }
 #box-two {
   border: dashed 5px;
-  border-color: black darkolivegreen darkolivegreen black;  width: 400px;
+  border-color: black darkolivegreen darkolivegreen black;  
+  width: 400px;
   padding: 20px;
   margin: 20px;
   border-radius: 5px;
@@ -24,7 +25,8 @@ body {
 }
 #box-3 {
   border: dashed 5px;
-  border-color: black darkolivegreen darkolivegreen black;  width: 400px;
+  border-color: black darkolivegreen darkolivegreen black;  
+  width: 400px;
   padding: 20px;
   margin: 20px;
   border-radius: 5px;
@@ -38,7 +40,8 @@ h1 {
   text-align: center;
   border: dashed 5px;
   border-radius: 5px;
-  border-color: black darkolivegreen darkolivegreen black;  width: 400px;
+  border-color: black darkolivegreen darkolivegreen black;  
+  width: 400px;
 }
 
 h2 {
