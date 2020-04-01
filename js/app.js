@@ -116,8 +116,8 @@ console.log(aboutArray);
 for(var attempts = 0; attempts < 6; attempts++){
 
   var askQuestion = prompt('Looking at my page, can you guess where I was born or name the last movie on my top 10 list? You have six tries, GO!');
-  for(var j = 0; j < aboutArray.length; j++){
-    if(askQuestion === aboutArray[j]){
+  for(i = 0; i < aboutArray.length; i++){
+    if(askQuestion === aboutArray[i]){
       alert('Correct ' + userName + '! Nice work!');
       correctCounter++;
       attempts = 6;
@@ -125,6 +125,7 @@ for(var attempts = 0; attempts < 6; attempts++){
     }
   }
   alert('Incorrect');
+
 }
 if(attempts === 6){
   alert('Incorrect, the correct answers are either eugene or insterstellar.');
