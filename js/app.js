@@ -10,9 +10,9 @@ function userNameQuestion() {
 var userName = userNameQuestion();
 
 //Q1
-function codeQuestion() {
-  var codeQuestion = prompt('Do you know how to use Javascript?').toLowerCase;
-  // console.log('This is the answer to do you know how to use Javascript ' + codeQuestion);
+function askCodeQuestion() {
+  var codeQuestion = prompt('Do you know how to use Javascript?').toLowerCase();
+  console.log('This is the answer to do you know how to use Javascript ' + codeQuestion);
   if (codeQuestion === 'yes' || codeQuestion === 'y') {
     alert(userName + ' Will you teach me?');
     correctCounter++;
@@ -22,7 +22,7 @@ function codeQuestion() {
     alert(userName + ' Ah, ah, ah, you didn\'t say the magic word!');
   }
 }
-codeQuestion();
+askCodeQuestion();
 
 
 // Q2
