@@ -12,17 +12,17 @@ var userName = userNameQuestion();
 //Q1
 function codeQuestion() {
   var codeQuestion = prompt('Do you know how to use Javascript?').toLowerCase;
-  console.log('This is the answer to do you know how to use Javascript ' + codeQuestion);
-  if(codeQuestion === 'yes' || codeQuestion === 'y'){
-    return alert(userName + ' Will you teach me?');correctCounter++;
-  }
-  else if(codeQuestion === 'no' || codeQuestion === 'n'){
-    return alert(userName + ' I don\'t either, but we\'ll be masters soon enough.');
+  // console.log('This is the answer to do you know how to use Javascript ' + codeQuestion);
+  if (codeQuestion === 'yes' || codeQuestion === 'y') {
+    alert(userName + ' Will you teach me?');
+    correctCounter++;
+  } else if(codeQuestion === 'no' || codeQuestion === 'n') {
+    alert(userName + ' I don\'t either, but we\'ll be masters soon enough.');
   } else {
-    return alert(userName + ' Ah, ah, ah, you didn\'t say the magic word!');
+    alert(userName + ' Ah, ah, ah, you didn\'t say the magic word!');
   }
 }
-codeQuestion('yes','no','n','y');
+codeQuestion();
 
 
 // Q2
