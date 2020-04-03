@@ -86,30 +86,29 @@ function youReady() {
 }
 youReady();
 
-// // Q6 (Lab 3)
-// // Guess a number
-// var answerPets = 5;//Correct answer
-// var guessPets = parseInt(prompt(userName + ' How many pets do you think I have?'));
-// // parseInt found in Google search. parseInt() function parses a string argument and returns an integer of specified radix (the base in mathematical numeral systems). 
-// console.log('this is the answer to how many pets do you think i have ' + guessPets);
+// Q6
+var answerPets = 5;//Correct answer
+var guessPets = parseInt(prompt(userName + ' How many pets do you think I have?'));
+// parseInt found in Google search. parseInt() function parses a string argument and returns an integer of specified radix (the base in mathematical numeral systems). 
+console.log('this is the answer to how many pets do you think i have ' + guessPets);
 
-
-// for (var i = 0; i < 4; i++){
-//   if(guessPets === answerPets){//parseInt used so the correct answer could be considered correct since guessPets is a string and the answer is a number. 
-//     alert('That\'s correct ' + userName + '! Congratulations!');
-//     correctCounter++;
-//     break;
-//   } else if((guessPets < answerPets) && i < 3){
-//     guessPets = parseInt(prompt('Too low! You have ' + (3 - i) + ' lives left'));
-//   } else if((guessPets > answerPets)){
-//     guessPets = parseInt(prompt('Too high! Guess again ' + (3 - i) + ' lives left'));
-//   } else {
-//     alert('Nope, sorry ' + userName + '! The correct answer is 5');
-//     i = 5;
-//   }
-
-// }
-
+function arrayGuess() {
+  for (var i = 0; i < 4; i++) {
+    if (guessPets === answerPets) {//parseInt used so the correct answer could be considered correct since guessPets is a string and the answer is a number. 
+      alert('That\'s correct ' + userName + '! Congratulations!');
+      correctCounter++;
+      break;
+    } else if ((guessPets < answerPets) && i < 3) {
+      guessPets = parseInt(prompt('Too low! You have ' + (3 - i) + ' lives left'));
+    } else if ((guessPets > answerPets)) {
+      guessPets = parseInt(prompt('Too high! Guess again ' + (3 - i) + ' lives left'));
+    } else {
+      alert('Nope, sorry ' + userName + '! The correct answer is 5');
+      i = 5;
+    }
+  }
+}
+arrayGuess();
 
 // // Array Question 7
 
