@@ -71,21 +71,20 @@ function areAfraid() {
 }
 areAfraid();
 
-// //Q5
-// var youReady = prompt(userName + ' are you ready for the next chapter in your life?').toLowerCase();
-// // console.log('this is the answer to are you ready for the next chapter in your life ' + youReady);
-// alert('This is the way ' + userName);
-
-// if(youReady === 'yes' || youReady === 'y'){
-//   alert('That\'s what I\'m talkin about ' + userName);
-//   correctCounter++;
-
-// }
-// else if(youReady === 'no' || youReady === 'n'){
-//   alert('Time to find some ambition ' + userName);
-// } else {
-//   alert('There\'s no way you will fail');
-// }
+//Q5
+function youReady() {
+  var youReady = prompt(userName + ' are you ready for the next chapter in your life?').toLowerCase();
+  // console.log('this is the answer to are you ready for the next chapter in your life ' + youReady);
+  if (youReady === 'yes' || youReady === 'y') {
+    alert('That\'s what I\'m talkin about ' + userName);
+    correctCounter++;
+  } else if (youReady === 'no' || youReady === 'n') {
+    alert('Time to find some ambition ' + userName);
+  } else {
+    alert('There\'s no way you will fail');
+  }
+}
+youReady();
 
 // // Q6 (Lab 3)
 // // Guess a number
