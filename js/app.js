@@ -16,7 +16,7 @@ function askCodeQuestion() {
   if (codeQuestion === 'yes' || codeQuestion === 'y') {
     alert(userName + ' Will you teach me?');
     correctCounter++;
-  } else if(codeQuestion === 'no' || codeQuestion === 'n') {
+  } else if (codeQuestion === 'no' || codeQuestion === 'n') {
     alert(userName + ' I don\'t either, but we\'ll be masters soon enough.');
   } else {
     alert(userName + ' Ah, ah, ah, you didn\'t say the magic word!');
@@ -25,21 +25,22 @@ function askCodeQuestion() {
 askCodeQuestion();
 
 
-// Q2
-// var determined = prompt('Are you determined to learn JS ' + userName + '?').toLowerCase();
-// //console.log('This is the answer to are you determined to learn JS ' + determined);
-// alert('Remember that with code, less is more');
+//Q2
+function determined() {
+  var determined = prompt('Are you determined to learn JS ' + userName + '?').toLowerCase();
+  //console.log('This is the answer to are you determined to learn JS ' + determined);
+  if (determined === 'yes' || determined === 'y') {
+    alert('Stay motivated ' + userName + '!');
+    correctCounter++;
+  }
+  else if (determined === 'no' || determined === 'n') {
+    alert('You better fix your attitude and buckle up then ' + userName);
+  } else {
+    alert('Yes or no please');
+  }
+}
+determined();
 
-// if(determined === 'yes' || determined === 'y'){
-//   alert('Stay motivated ' + userName + '!');
-//   correctCounter++;
-
-// }
-// else if(determined === 'no' || determined === 'n'){
-//   alert('You better fix your attitude and buckle up then ' + userName);
-// } else {
-//   alert('Yes or no please');
-// }
 // // Q3
 // var uncomfortable = prompt('Are you uncomfortable yet?').toLowerCase();
 // //console.log('This is the answer to are you uncomfortable yet ' + uncomfortable);
