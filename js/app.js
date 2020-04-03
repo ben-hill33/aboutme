@@ -56,21 +56,21 @@ function uncomfortable() {
 }
 uncomfortable();
 
-// //Q4
-// var areAfraid = prompt('Are you afraid?').toLowerCase();
-// //console.log('this is the answer to are you afraid ' + areAfraid);
-// alert('You must unlearn, what you have learned');
+//Q4
+function areAfraid() {
+  var areAfraid = prompt('Are you afraid?').toLowerCase();
+  //console.log('this is the answer to are you afraid ' + areAfraid);
+  if (areAfraid === 'yes' || areAfraid === 'y') {
+    alert('Fear is the path to the dark side ' + userName);
+    correctCounter++;
+  } else if (areAfraid === 'no' || areAfraid === 'n') {
+    alert('You will be ' + userName);
+  } else {
+    alert('Do or do not, there is no try');
+  }
+}
+areAfraid();
 
-// if(areAfraid === 'yes' || areAfraid === 'y'){
-//   alert('Fear is the path to the dark side ' + userName);
-//   correctCounter++;
-
-// }
-// else if(areAfraid === 'no' || areAfraid === 'n'){
-//   alert('You will be ' + userName);
-// } else {
-//   alert('Do or do not, there is no try');
-// }
 // //Q5
 // var youReady = prompt(userName + ' are you ready for the next chapter in your life?').toLowerCase();
 // // console.log('this is the answer to are you ready for the next chapter in your life ' + youReady);
