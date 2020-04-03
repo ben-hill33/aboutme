@@ -41,21 +41,21 @@ function determined() {
 }
 determined();
 
-// // Q3
-// var uncomfortable = prompt('Are you uncomfortable yet?').toLowerCase();
-// //console.log('This is the answer to are you uncomfortable yet ' + uncomfortable);
-// alert('Embrace the suck, buttercup!');
+// Q3
+function uncomfortable() {
+  var uncomfortable = prompt('Are you uncomfortable yet?').toLowerCase();
+  //console.log('This is the answer to are you uncomfortable yet ' + uncomfortable);
+  if (uncomfortable === 'yes' || uncomfortable === 'y') {
+    alert('This is your new comfortable ' + userName + '!');
+    correctCounter++;
+  } else if (uncomfortable === 'no' || uncomfortable === 'n') {
+    alert('Yes you are ' + userName);
+  } else {
+    alert('That was a yes or no question, dude');
+  }
+}
+uncomfortable();
 
-// if(uncomfortable === 'yes' || uncomfortable === 'y'){
-//   alert('This is your new comfortable ' + userName + '!');
-//   correctCounter++;
-
-// }
-// else if(uncomfortable === 'no' || uncomfortable === 'n'){
-//   alert('Yes you are ' + userName);
-// } else {
-//   alert('That was a yes or no question, dude');
-// }
 // //Q4
 // var areAfraid = prompt('Are you afraid?').toLowerCase();
 // //console.log('this is the answer to are you afraid ' + areAfraid);
