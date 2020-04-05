@@ -4,15 +4,12 @@ var correctCounter = 0;
 
 function userNameQuestion() {
   var userName = prompt('What is your name?');
-  console.log(userName + ' this is the answer to what is your name');
   return userName;
 }
 var userName = userNameQuestion();
 
-//Q1
 function askCodeQuestion() {
   var codeQuestion = prompt('Do you know how to use Javascript?').toLowerCase();
-  console.log('This is the answer to do you know how to use Javascript ' + codeQuestion);
   if (codeQuestion === 'yes' || codeQuestion === 'y') {
     alert(userName + ' Will you teach me?');
     correctCounter++;
@@ -25,10 +22,8 @@ function askCodeQuestion() {
 askCodeQuestion();
 
 
-//Q2
 function determined() {
   var determined = prompt('Are you determined to learn JS ' + userName + '?').toLowerCase();
-  //console.log('This is the answer to are you determined to learn JS ' + determined);
   if (determined === 'yes' || determined === 'y') {
     alert('Stay motivated ' + userName + '!');
     correctCounter++;
@@ -41,10 +36,8 @@ function determined() {
 }
 determined();
 
-// Q3
 function uncomfortable() {
   var uncomfortable = prompt('Are you uncomfortable yet?').toLowerCase();
-  //console.log('This is the answer to are you uncomfortable yet ' + uncomfortable);
   if (uncomfortable === 'yes' || uncomfortable === 'y') {
     alert('This is your new comfortable ' + userName + '!');
     correctCounter++;
@@ -56,10 +49,8 @@ function uncomfortable() {
 }
 uncomfortable();
 
-//Q4
 function areAfraid() {
   var areAfraid = prompt('Are you afraid?').toLowerCase();
-  //console.log('this is the answer to are you afraid ' + areAfraid);
   if (areAfraid === 'yes' || areAfraid === 'y') {
     alert('Fear is the path to the dark side ' + userName);
     correctCounter++;
@@ -71,10 +62,8 @@ function areAfraid() {
 }
 areAfraid();
 
-//Q5
 function youReady() {
   var youReady = prompt(userName + ' are you ready for the next chapter in your life?').toLowerCase();
-  // console.log('this is the answer to are you ready for the next chapter in your life ' + youReady);
   if (youReady === 'yes' || youReady === 'y') {
     alert('That\'s what I\'m talkin about ' + userName);
     correctCounter++;
@@ -86,15 +75,12 @@ function youReady() {
 }
 youReady();
 
-// Q6
-var answerPets = 5;//Correct answer
+var answerPets = 5;
 var guessPets = parseInt(prompt(userName + ' How many pets do you think I have?'));
-// parseInt found in Google search. parseInt() function parses a string argument and returns an integer of specified radix (the base in mathematical numeral systems). 
-console.log('this is the answer to how many pets do you think i have ' + guessPets);
 
 function arrayGuess() {
   for (var i = 0; i < 4; i++) {
-    if (guessPets === answerPets) {//parseInt used so the correct answer could be considered correct since guessPets is a string and the answer is a number. 
+    if (guessPets === answerPets) {
       alert('That\'s correct ' + userName + '! Congratulations!');
       correctCounter++;
       break;
@@ -109,8 +95,6 @@ function arrayGuess() {
   }
 }
 arrayGuess();
-
-// Array Question 7
 
 var aboutArray = ['eugene', 'interstellar'];
 
